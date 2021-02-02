@@ -27,6 +27,7 @@
   "dependencies": {
     "@openzeppelin/contracts": "^3.3.0",
     "bignumber.js": "9.0.0",
+    "date.js": "^0.3.3",
     "eth-json-rpc-filters": "^4.1.1",
     "ethereumjs-abi": "^0.6.8",
     "ethers": "^5.0.26",
