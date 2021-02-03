@@ -20,11 +20,11 @@ const vestAirdrop = async (batchVest) => {
 	const start = Math.round(date("now").getTime() / 1000);
 	const cliff = Math.round(date("30 days from now").getTime() / 1000);
 	const vesting = Math.round(date("90 days from now").getTime() / 1000);
-	const tranche = chunkArray(airdrop, 20);
+	const tranche = chunkArray(airdrop, 40);
 
 	while (tranche.length > 0) {
 		const chunk = tranche.pop();
-		await batchVest.vest(
+		const tx = await batchVest.vest(
 			chunk.map((user) => user[0]),
 			chunk.map((user) => toWei(user[1])),
 			start,
@@ -36,6 +36,7 @@ const vestAirdrop = async (batchVest) => {
 vested to ${chunk.length} addresses
 batches remaining: ${tranche.length}
 `);
+		tx.wait(1)
 	}
 };
 
