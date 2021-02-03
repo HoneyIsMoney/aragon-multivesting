@@ -19,7 +19,7 @@ dao=
 ## 2. install first apps & create voting token 
 dao install $dao agent $f
 dao install $dao token-manager.aragonpm.eth --app-init none $f 
-dao token new "Token" "AG" $f
+dao token new "Agaave" "AG" $f
 
 agent=
 tokenManager=

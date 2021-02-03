@@ -1,6 +1,7 @@
 node_modules
 secret.json
 notes.md
+tenderly.yaml
 
 #files
 cache

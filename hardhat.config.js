@@ -1,4 +1,5 @@
 require("@nomiclabs/hardhat-waffle");
+require("@tenderly/hardhat-tenderly");
 
 const secret = require("./secret.json");
 const INFURA_PROJECT_ID = secret.INFURA;
@@ -49,7 +50,7 @@ module.exports = {
   },
   tenderly: {
     username: "greenhornet",
-    project: "tst",
+    project: "airdrop",
   },
 };
 
