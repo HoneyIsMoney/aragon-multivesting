@@ -1,6 +1,8 @@
 node_modules
 secret.json
+notes.md
 
-#Hardhat files
+#files
 cache
 artifacts
+scripts/lists
